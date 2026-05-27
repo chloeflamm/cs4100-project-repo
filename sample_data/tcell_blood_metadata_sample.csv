@@ -1,0 +1,504 @@
+specimen_from_organism.provenance.document_id,specimen_from_organism.biomaterial_core.biomaterial_id,annotated_cell_identity.text,annotated_cell_identity.ontology,annotated_cell_identity.ontology_label,barcode
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGGACACTCAATCTCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGAGGGATCAAGGTAA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCTATTAAGCTGTCTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTGCTCAGATCCCAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGCCAAGGTAAGTGGC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CAGCCGATCCGAGCCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GATGAAAGTGCACGAA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTCACGGCAGATCCAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCAGGTACATGTAAGA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGCCAAATCTCCTATA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GATGCTACACACGCTG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTCTTCGAGGGATACC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CTTAACTAGGCATTGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCACGGACAATGAATG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ATTGGTGGTCCGAAGA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTTCTGTCTCTAAGG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TAAACCGAGTGGTCCC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAAGTTGGTAACGACG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TAGACCATCATTGCGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CAGCATATCGACAGCC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",ACTATCTAGTGAAGAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCTTCCACACCAGATT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AACCGCGAGAGAGCTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TATTACCTCACAACGT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTTAAGCTCATCTGTT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GCCTCTAAGCTAAGAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTAAGACCAACCGCCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGGAGCTTCACCATAG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TACACGACAGATCTGT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTAGGCCAGTCTTGCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGCCCATCACGTCAGC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGTAGTCGTGTTAAGA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GATCGCGGTGCACGAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGGCCACGTCGCGGTT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TGTATTCGTTCCGGCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AAAGCAAAGACGACGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGCTGGACAGGAACGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTCACAAAGGGTTTCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGAGCTTCAGAGCCAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGTGCGTAGTCATCCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGGGTCTCTAACGGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TATCTCAAGATCTGCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCCTCTACACACAGAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGCAGCCCATAGAAAC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GAAGCAGCAAACCCAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GATCGTACACCAGATT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AACTCCCAGACTTGAA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTCGGGATCGTGGTCG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGAGGGATCTTGAGAC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TGGTTAGAGAAGGTGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CAGCATAGTCATCGGC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTGCGGATCACGACTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGGGAAGAGAAACGCC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CATCGAACAATGTAAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CATCGAACAATGTAAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCTTCCAGTTAAGAAC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTCTGGTGTACACCGC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CTCATTACATTTCACT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGAATAGCAATGACCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAGTCCTAGCCTATGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGTTCCGTCCGCATCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGAGCACAGGACACCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACCTTTACATGTCCTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGCACCTGTTAGGGTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GACCTGGCATGAACCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ACTTACTAGGCATGGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGGAGTCGTCTGCAAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACTTTCAGTGTAACGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TAGACCACAGTACACT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TTGACTTTCGTGACAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGAGGAGTAGCGTGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGGTTGCGTACATCCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AACTCCCAGCGAGAAA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TACAGTGAGTGTACGG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCAGGTACATAGTAAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ATCACGATCCCACTTG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CGCTATCTCTGATACG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GACTGCGCATCACCCT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTGCAGCAGAACAACT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGCGTGTTCCTCAATT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TGCACCTTCTTGTTTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTCTACGTCAACCATG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CAGGTGCCACATCCAA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTGTCCCAATGACCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGTGTTTGTGCCTTGG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GGACGTCCAACTTGAC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AACCGCGAGCGCCTCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGAATAGAGGGTCTCC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CAGAGAGAGTCCTCCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ATTGGACGTTCTGAAC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGGGTGATCGTACGGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AACACGTAGTAGGCCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TGCGCAGGTATATGAG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGATCTGGTTAGTGGG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGGAGTCTCAGTGCAT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTCGTCAAGATATACG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTCGTACCATATACCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TTAACTCCAAATACAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CATGCCTGTAGCTAAA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTGTTAGAGAGTGAGA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TTGAACGTCCAAATGC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CATCCACAGATCCCGC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CAGAGAGTCGGTCTAA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ATAGACCAGAGCCTAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",AAGTCTGAGATCCCAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCGAGGCCACCGAATT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGTGCGTAGAGGACGG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GATGAAAGTATTCTCT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCTACACGTAGTACCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGTAGTCAGACGCTTT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTCACAACATGCAACT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGCCTAATCGGAAACG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCTCTAAAGAGTGACC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TAGGCATGTTCGTCTC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACATACGCAAGGTTCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACTGTCCTCGAGAGCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AACTTTCCAGTGGGAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CAACTAGTCCCATTAT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGGCGCACATATACCG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGCGTGGGTGGGTATG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AAAGATGCAGGGAGAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CACAGTAGTTTGTGTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCTTCCCCAGATCGGA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTCACAAGTCGTCTTC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTAGTCAAGCCAACAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGCCAGTCTGTCTCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TCGTAGATCACTTACT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CCTCAGTCACAGGTTT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGCCAAGTCAGGCGAA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GCTTGAAGTTGGACCC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCACTACGTCATATGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GTGCTTCTCGGTGTCG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AACGTTGTCTACTCAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CATCGGGTCTGAGGGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TTGGCAAAGCTAGTTC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTGCGGATCTAAGCCA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTGATGCAAACTGCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCTGAGAGTACCGGCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",ATTACTCGTCTTCGTC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCTCTAAAGGTTACCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCACAAGAGAATTGTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTCACGGTCACTCCTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACGCAGCTCCACGTGG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCTCTAAGTCTCGTTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",AGCCTAACACTTGGAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TTCTTAGCACAGACAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TTAACTCCACCGTTGG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGGGTCAAGATATGCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CAGTAACTCCACTGGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AAGTCTGAGGCGATAC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTTCTCTAGTTCGCAT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGGCCACCATCCCACT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGTCTTTAGCTAACAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TGCTACCAGCGATGAC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TTCTTAGAGACTGGGT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CACACCTTCCGTCAAA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CACACCTTCCGTCAAA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TGACGGCGTTCTGGTA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTGCCTAGTAGGCTGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GCATGATTCTAACCGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CAGCTAAAGTCAAGCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GCGAGAAGTCTGATTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGGGCGTCATGCCTTC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",ATCATGGTCTGCGACG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CATGACAGTAGCGATG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGTGGTATCGCGCCAA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TACGGGCAGCGCTCCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CGTTGGGGTATAGGTA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TAGTGGTCATTTGCTT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CATCCACGTCATCGGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCTATTACAAGTCTAC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GAACCTAGTCACACGC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GAATGAAAGGGTCGAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGAGTGGGTTCCACTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",AAGGAGCAGAATTGTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CAACCTCCAGTGACAG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ATTGGTGCAGTATAAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TTAGTTCTCTCTGAGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TGAGGGACAATAGCGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GCAGTTACACCACGTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACTATCTAGCCCTAAT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CATGGCGCACTTCTGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTGCTTCGTACTCGCG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TGGACGCAGGCTCTTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTACGTATCCTAGGGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTACTTTGTAGCTAAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GCTTGAAGTTACGGAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CAAGATCGTCTCTCGT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TTTGTCAAGAGCAATT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTGCTCCATGGATGG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GGACATTTCCATTCTA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGACAAGAGAGTCGGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACTATCTGTAAGCACG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CATGACACACATTCGA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GAATGAAAGGCTATCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CATATTCAGCCCTAAT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGAGCTTTCTGTCTAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GAACATCCAAGGGTCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCTTTCCCATCGATGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AAAGTAGTCTGGCGAC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TAGGCATCATGTTCCC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCTACACAGCAATATG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AACGTTGTCAGATAAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CAGCATATCCAAGCCG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTAGCGGTAAATGTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCAGCAAAGTCTCCTC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CTGGTCTTCACAGGCC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CTGGTCTTCACAGGCC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GAACCTACAAAGTCAA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCACGGATCATGCTCC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGGTTCCCAGGGCATA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CACCACTCAGGAACGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TACGGGCGTTTACTCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CTAGAGTGTCTAGCGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GAACATCCAAAGGTGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GACTAACAGCCCGAAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGCTTGACACAGATTC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGGACGCGTACATGTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTAGGCGTAGCAAAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTCGAGGGTCTACCTC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GGACATTTCCCAACGG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTCCTAGTCAGCGACC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CAGAATCTCAGTGCAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGAGGAAGAGGTTAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ACAGCTAGTAGCGTCC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTTCGGGTCGTCGTTC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTACACCTCGGAATCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CTCAGAATCCACGTGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CGGACACAGAAGGTTT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGTGGTACAAGTCTAC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",AGCCTAAGTGAAGGCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",AACTCAGCAATGGAGC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAGGTGCGTGTTCGAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GATCGTAGTCCTCTTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCAGTTAAGTGGGCTA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCCATACAGTGTACGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTCCATGTCGCTTCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GAGTCCGAGCCACCTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TTGAACGGTGGGTATG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TGCGCAGAGAGCTATA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CATATGGCACTTCGAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGGGATGGTCCTAGCG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TAAGTGCTCCCAGGTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GATCGATTCAGTGTTG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGGTCATTCCAATGGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACGGGTCCACTGCCAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GGATGTTTCCAGAAGG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGATTGCCATGGAATA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGAACTTCACGACGAA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCACGGACAGGTGGAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGTGTCATCAGGCCCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CTCGTACAGCTAGGCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGTAGTCTCTTTACAC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AAGGCAGGTCCATCCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TAAACCGTCCTGCAGG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGCTTCACAGAGTGTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTGAAGGGTCAGAATA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGAGGATCTTAACCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GCGACCAGTAATCACC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCTGCGATCCCATTAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ACGCCGACATCTGGTA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GATCAGTGTAGAAGGA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGAGTGGCACACCGCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCCTCTATCTTCGGTC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CATCCACGTTGGACCC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGGGTCAAGAAGGTGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGACAAGAGGCTACGA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GTAACTGAGCTGTCTA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CTCGGGATCATGCATG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GTGCAGCCACATGTGT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",AACGTTGAGAACTCGG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TCATTACAGCAATATG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTAATGGCAAGTCATC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGGTCCGGTCTGGAGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GAACGGATCTGCGGCA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GAGGTGATCCGCTGTT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TACTCATGTTGGTTTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CATCAGAAGTGACATA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTACGTACAATGAATG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",ATCCACCCATCAGTCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGGTCTGAGCCAGTTT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTTCTGTCTAACGGT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTTTCAAGGCACATG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGACTTTAGTGGTCCC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TTTACTGTCTCGTTTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",ACGGAGAAGTGTCTCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",ACCTTTAAGGAACTGC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CACTCCACATAACCTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GTCAAGTGTTACTGAC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTGAGCTCCAGATCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TAAGCGTTCGAGCCCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTAACGTCAGTCACTA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CACATAGCACATCCAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTTCGGGCAGTATAAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CACATTTGTAAGGGCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TTATGCTCAATGGAGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTGCTTCTCAAAGTAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CACCACTGTACCGGCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGTTGGGTCTATCCTA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGGCACTAGGAATGGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTCGTCAAGCTTATCG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGAGCCGTCCTTCAAT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CCTAGCTAGTCAATAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TTAACTCTCAAACAAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCATTCGGTACATGTC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACTGCTCCAGGACGTA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCCAGTTAGCCACGCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",ACGATGTGTGATGATA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TTAACTCAGCCGGTAA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCTACACAGTGGTAAT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCAGCCAAGTCTCCTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCGCAACAGTGGGCTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGCGACTTCTATGTGG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CATATTCGTCGGCTCA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAAGAAAAGCCTATGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCTTTCTCACGGTTTA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGGCCGTTCTCGTTTA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGTCTACCATGAACCT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTCGTCATCGCTTAGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GGGATGAAGCTTCGCG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTCTAATGTTATGCGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGCGGTCAGGCTCTTA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGGCGCATCCGAAGAG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTCTGGTGTGCCTTGG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TGACTTTCACAGCCCA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGCTTGATCAATACCG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTAACTGAGTACCGGA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTAATGGCACGTCAGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGGATGACATCTCGCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTACTCCGTACGAAAT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TTTGCGCCAATCCGAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ACGCAGCTCCCGACTT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACGTCAATCCTCCTAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AACTCAGCACCGAATT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCAGCGATCCACGAAT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGGGAGTCACCAGGTC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CATTCGCCACATTAGC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TAGACCAGTGGGTATG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGGACACTCGTAGGAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CGCGGTACAGCGTAAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGCGTTTTCCAAGCCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GGACAGATCCTTTCTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TTGTAGGGTGCCTGGT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TAAGAGAGTTCCGTCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CTGATAGAGATGCGAC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GACCAATTCCAATGGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTTGTTTCCATGAGT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGACAAGTCTCCCTGA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTAGCGAGTTCCACA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CAGTAACAGCAGGCTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGCCCTACAATAGCGG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CAGCATAGTATTAGCC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TCATTTGCAAACGTGG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACACCGGTCCTTTCTC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TAGTGGTGTTTGTTGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAACCTCCAGCCAGAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AAGACCTTCGCAAGCC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCATTACCATGACATC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TTGGCAAAGTTACCCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CGCGTTTTCAACACTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAGATCAAGATCCCGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ATGGGAGAGGTTACCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TTGAACGGTGTCAATC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTAGGCCACAGGTTT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCCTCCTTCACGAAGG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AACTGGTTCTCTGCTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GCACATATCGGTCTAA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CATCAGAAGACTACAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TACCTTAAGTCGAGTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GACGCGTAGACAATAC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGCCAGAGTGAATTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GACAGAGGTTGATTCG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GACGTTAAGTAGGTGC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GCGCGATCAGACAAGC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GAGGTGACAAAGGAAG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GTGTTAGAGAGTAAGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACCTTTACAGTCAGAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GACGTTAAGTGGGTTG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TCATTTGGTATATCCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTAGCCTGTGTTCTTT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGAAAGCTCCAATGGT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGAGCAACACAGATTC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTCAGGAGCGTTGCC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTGATGCAAGTTGTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CAAGTTGGTCTGATCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGAGTGGTCACTATTC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AAGGAGCAGGACAGCT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GACTACACACGGCGTT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTGATCCAGAGGTTGC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTAAGACTCCGTTGCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GACCAATTCTCACATT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TAAACCGTCGAATCCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CAGATCAGTAGCGATG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGTATTGTCCGCGTTT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CTAGTGAAGAATTCCC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGACATTTCTCTTATG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TAAACCGTCCCTTGCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TACACGAAGTGCGTGA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TACGGATTCAGCAACT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AAAGCAAGTGTGAAAT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TACTTACAGAGGGCTT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ATCATGGTCTCTGTCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCAATCTTCAACCAAC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGAGTGGTCAGTCCCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GCGGGTTTCGGAAATA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GGCTCGACAAGGGTCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAAGAAATCTGTCTCG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CAGCTGGAGAAGCCCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGAGAGGAGGGCTTCC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGACTTCTCCTTGCCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCAGCAATCAATACCG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TACTTACCAAAGCAAT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTAGGCAGTACGATA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TCAATCTTCATGGTCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GTTAAGCTCTTTAGTC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CATGACACATTCCTGC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ACGGAGATCGCCAGCA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGGTTGCAGGATGCGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GCGCAGTTCGGACAAG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCACAAGCAATCCAAC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGCTTGATCTGGAGCC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CGTCACTCAAAGTGCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TGGTTAGCACCTATCC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GGATGTTCAGTAACGG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GACGTTATCCCTGACT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ATTGGTGCAGGTGGAT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CCACTACGTGTGACGA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CTCAGAACAGGATTGG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGGAATGTCAGCTTAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AGAATAGCATGCATGT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTACATTGTGCAGACA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ATAACGCAGCTAGGCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TACGGGCAGACACTAA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTAGCCTGTGTGAATA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACCCACTTCTAGAGTC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CCTCTGATCGTCACGG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TGATTTCCATCCCATC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CCACGGAAGGTAGCCA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CGCTTCAAGACTTGAA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TTCGGTCAGAAGGGTA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CCTCAGTAGGGCATGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTCTCGTGTCGAATCT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGCTACCTCCCAAGAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGCTGGTGTAAATGTG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GTCTCGTAGCTTATCG
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",AGCGTATGTCTGGTCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GAATGAACATATACCG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",AAGGTTCTCTTGACGA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTGAAACAGAAGCCCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",CTAGAGTCACGAGGTA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCTAGCTTCATTCACT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ATCACGACACATGGGA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTGTGCGAGGTGTGGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TAAGAGAAGGCCATAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGCGACTGTGCAGACA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TGACTAGTCTCAAACG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTGTCTAGCGTAATA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",TTCTCAAAGTGTCTCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACATCAGAGCGCCTTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CCGTTCAGTCGACTGC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GGTATTGAGGGCACTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTGGGTCAGTTACCCA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGGGAGTAGCGTGAGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GCGCGATGTATATGGA
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",CAGATCATCCGAATGT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCAACGATCAGAGGTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCGCGAGCACGAAAGC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACAGCTACAGGATTGG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGACGGCCAAAGAATC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GACCTGGGTACGCACC
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGCCAGTCCTTCAAT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ATTGGTGTCGAATCCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTTCTGTCAGAGGTG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTGAGCAGAGAGCTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GAATGAACAATCACAC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TATGCCCCATCGGGTC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGCCAAGTCGTAGATC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GCTGCTTTCGGAGCAA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TAAGTGCCAATGAATG
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TGGCCAGGTCAATACC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",AGTGGGACAAATACAG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CCTTACGGTTCCCTTG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTGAAGTGTTAGATGA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTTCTGTCGCTTGTC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TCAGCTCGTAAGAGGA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ACTTTCATCACGACTA
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CTGTGCTCACCAGATT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",TACAGTGGTTCCTCCA
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",GTACTTTGTAGATTAG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GTGTTAGCATTAACCG
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTCATTTTCGTACGGC
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",TTGAACGGTTGTCTTT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CTTGGCTGTCTCAACA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGCCGATCACTGGGC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",ATCCGAAGTACGAAAT
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",GGGTTGCAGGGCATGT
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",ACGATGTCAGTCAGCC
+46cbd6a3-1ba4-4f57-b27d-4e2b918b0d4c,PP017,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",TCGCGTTCACGTCTCT
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD4+ T cell,CL:0001043,"activated CD4-positive, alpha-beta T cell, human",CGTAGGCAGCTGTTCA
+0ec78ea7-1fc1-47c6-9081-f9fb622eab8c,PP018,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",CGTCCATAGCAGACTG
+edd28ba8-0bb3-476c-9079-d01b939617b0,PP019,activated CD8+ T cell,CL:0001049,"activated CD8-positive, alpha-beta T cell, human",GGACAAGCAAGCCGCT
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD4+ T cell,CL:0000624,"CD4-positive, alpha-beta T cell",GTTTCTATCACTTATC
+03a73511-bdeb-47e0-8c1d-588fdbe8bb66,PP020,resting CD8+ T cell,CL:0000625,"CD8-positive, alpha-beta T cell",ACGCAGCTCGAATCCA
