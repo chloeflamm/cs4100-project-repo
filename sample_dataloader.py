@@ -2,7 +2,6 @@ import loompy
 import pandas as pd
 import numpy as np
 
-
 def pca(X, n_components=50):
     X_centered = X - X.mean(axis=0)
     cov = np.cov(X_centered.T)
