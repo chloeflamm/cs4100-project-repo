@@ -1,6 +1,6 @@
 # A Comparative Analysis of T-Cell State Classification from Single-cell RNA-seq Data
 
-** Team Members: ** Chloe Flamm, Nasir Stanley
+#### Team Members: Chloe Flamm, Nasir Stanley
 
 ### I. Overview of the Problem
 
@@ -23,12 +23,11 @@ In addition to our from-scratch classifiers, we started by running our data thro
 - Libraries: requirements.txt
 
 - Dataset Download: 
-Human Cell Atlas Data Explorer: https://explore.data.humancellatlas.org/projects/4a95101c-9ffc-4f30-a809-f04518a23803/get-curl-command
-
-Species: Homo sapiens
-File Type: csv, loom
-Shell: Bash
-(Request curl Command)
+    - Human Cell Atlas Data Explorer: https://explore.data.humancellatlas.org/projects/4a95101c-9ffc-4f30-a809-f04518a23803/get-curl-command
+    - Species: Homo sapiens
+    - File Type: csv, loom
+    - Shell: Bash
+    - (Request curl Command)
 
 
 - Pre-Cleaning
