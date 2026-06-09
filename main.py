@@ -1,5 +1,6 @@
 import numpy as np
 from sample_dataloader import load_data
+from pretrained_celltypist import run_celltypist
 from knn_classifier import KNN
 from evaluate import cross_validate, print_full_report
 
@@ -15,6 +16,17 @@ idx = np.random.permutation(len(X))
 split = int(0.8 * len(X))
 X_train, X_test = X[idx[:split]], X[idx[split:]]
 y_train, y_test = y[idx[:split]], y[idx[split:]]
+
+# Pretrained CellTypist Baseline
+print("\nPretrained CellTypist Baseline Results")
+y_celltypist, celltypist_preds, celltypist_probs = run_celltypist(
+    "sample_data/tcell_blood_sample.loom", # Run using raw data/no normalization
+    "sample_data/tcell_blood_metadata_sample.csv")
+classes_celltypist = np.unique(y_celltypist)
+
+# Used to map the predicted labels from CellTypist to the labels in our dataset for evaluation
+#print("CellTypist predicted labels:", np.unique(celltypist_preds)) 
+print_full_report(y_celltypist, celltypist_preds, celltypist_probs, classes) 
 
 # KNN Classifier
 print("\nKNN Classifier Results")
