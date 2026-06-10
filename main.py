@@ -81,13 +81,15 @@ cross_validate(RandomForest, X, y, n_folds=5, n_trees=100, max_depth=10)
 rf = RandomForest(n_trees=100, max_depth=10)
 rf.fit(X_train, y_train)
 rf_preds, _ = rf.predict(X_test)
-print_full_report(y_test, rf_preds, None, classes)
+rf_probs = rf.predict_probs(X_test, classes)
+print_full_report(y_test, rf_preds, rf_probs, classes)
 
 save_results("rf", {
     "classes": classes.tolist(),
     "accuracy": float(accuracy(y_test, rf_preds)),
     "macro_f1": float(macro_f1(y_test, rf_preds, classes)),
     "per_class": {c: {k: float(v) for k, v in s.items()} for c, s in precision_recall_f1(y_test, rf_preds, classes).items()},
+    "auc_roc": auc_roc(y_test, rf_probs, classes),
     "confusion_matrix": confusion_matrix(y_test, rf_preds, classes).tolist()
 })
 
