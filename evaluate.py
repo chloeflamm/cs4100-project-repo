@@ -57,16 +57,17 @@ def cross_validate(model_class, X, y, n_folds=5, **model_kwargs):
 
         model = model_class(**model_kwargs)
         model.fit(X_train, y_train)
-        preds = model.predict(X_val)
+        result = model.predict(X_val)
+        preds = result[0] if isinstance(result, tuple) else result
 
         acc = accuracy(y_val, preds)
         mf1 = macro_f1(y_val, preds, classes)
         accuracies.append(acc)
         macro_f1s.append(mf1)
-        print(f"  Fold {fold + 1}: Accuracy={acc:.4f}, Macro F1={mf1:.4f}")
+        print(f"Fold {fold + 1}: Accuracy={acc:.4f}, Macro F1={mf1:.4f}")
 
-    print(f"  Mean Accuracy: {np.mean(accuracies):.4f} ± {np.std(accuracies):.4f}")
-    print(f"  Mean Macro F1: {np.mean(macro_f1s):.4f} ± {np.std(macro_f1s):.4f}")
+    print(f"Mean Accuracy: {np.mean(accuracies):.4f} ± {np.std(accuracies):.4f}")
+    print(f"Mean Macro F1: {np.mean(macro_f1s):.4f} ± {np.std(macro_f1s):.4f}")
     return accuracies, macro_f1s
 
 def auc_roc(y_true, y_prob, classes):
@@ -90,7 +91,7 @@ def auc_roc(y_true, y_prob, classes):
         fpr = fp / (fp[-1] + 1e-8)
 
         # AUC via trapezoidal rule
-        auc = np.trapz(tpr, fpr)
+        auc = np.trapezoid(tpr, fpr)
         aucs[c] = abs(auc)  # abs in case of reverse ordering
     return aucs
 
@@ -119,3 +120,15 @@ def print_full_report(y_true, y_pred, y_prob, classes):
     for i, c in enumerate(classes):
         row = "".join([f"{cm[i][j]:>{col_width}}" for j in range(len(classes))])
         print(f"{c:>25}{row}")
+
+
+# AI Usage: 
+# Prompt: Json can only store basic data types but numpy returns np.float64,
+# causing an error when saving results. How do I write a converter function
+# to handle this when saving to Json?
+def convert_to_serializable(obj):
+    if isinstance(obj, np.floating):
+        return float(obj)
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    return obj

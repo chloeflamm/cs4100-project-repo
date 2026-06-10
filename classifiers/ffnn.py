@@ -1,3 +1,9 @@
+'''
+ffnn.py
+Author: Nasir Stanley
+
+ffnn.py is a Feed Forward Neural Network built out using PyTorch.
+'''
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -62,7 +68,7 @@ class FFNN(nn.Module):
 
             self.loss_history.append(loss.item())
             if epoch % 10 == 0:
-                print(f"  Epoch {epoch}/{self.epochs} | Loss: {loss.item():.4f}")
+                print(f"Epoch {epoch}/{self.epochs} | Loss: {loss.item():.4f}")
 
     def predict(self, X):
         self.eval()
