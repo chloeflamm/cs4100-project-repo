@@ -1,8 +1,7 @@
 import numpy as np
 import json
 from sample_dataloader import load_data
-from pretrained_celltypist import run_celltypist
-from knn_classifier import KNN
+from classifiers.knn_classifier import KNN
 from evaluate import cross_validate, print_full_report, accuracy, macro_f1, precision_recall_f1, convert_to_serializable
 
 X, y = load_data("sample_data/tcell_blood_sample.loom",
