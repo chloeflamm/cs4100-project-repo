@@ -119,3 +119,15 @@ def print_full_report(y_true, y_pred, y_prob, classes):
     for i, c in enumerate(classes):
         row = "".join([f"{cm[i][j]:>{col_width}}" for j in range(len(classes))])
         print(f"{c:>25}{row}")
+
+
+# AI Usage: 
+# Prompt: Json can only store basic data types but numpy returns np.float64,
+# causing an error when saving results. How do I write a converter function
+# to handle this when saving to Json?
+def convert_to_serializable(obj):
+    if isinstance(obj, np.floating):
+        return float(obj)
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    return obj

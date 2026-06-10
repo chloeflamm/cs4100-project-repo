@@ -1,8 +1,9 @@
 import numpy as np
+import json
 from sample_dataloader import load_data
 from pretrained_celltypist import run_celltypist
 from knn_classifier import KNN
-from evaluate import cross_validate, print_full_report
+from evaluate import cross_validate, print_full_report, accuracy, macro_f1, precision_recall_f1, convert_to_serializable
 
 X, y = load_data("sample_data/tcell_blood_sample.loom",
                  "sample_data/tcell_blood_metadata_sample.csv")
@@ -17,17 +18,6 @@ split = int(0.8 * len(X))
 X_train, X_test = X[idx[:split]], X[idx[split:]]
 y_train, y_test = y[idx[:split]], y[idx[split:]]
 
-# Pretrained CellTypist Baseline
-print("\nPretrained CellTypist Baseline Results")
-y_celltypist, celltypist_preds, celltypist_probs = run_celltypist(
-    "sample_data/tcell_blood_sample.loom", # Run using raw data/no normalization
-    "sample_data/tcell_blood_metadata_sample.csv")
-classes_celltypist = np.unique(y_celltypist)
-
-# Used to map the predicted labels from CellTypist to the labels in our dataset for evaluation
-#print("CellTypist predicted labels:", np.unique(celltypist_preds)) 
-print_full_report(y_celltypist, celltypist_preds, celltypist_probs, classes) 
-
 # KNN Classifier
 print("\nKNN Classifier Results")
 print("Cross Validation:")
@@ -38,6 +28,14 @@ knn.fit(X_train, y_train)
 knn_preds = knn.predict(X_test)
 print_full_report(y_test, knn_preds, None, classes)
 
+# save evaluation metrics results to json
+knn_results = {
+    "accuracy": float(accuracy(y_test, knn_preds)),
+    "macro_f1": float(macro_f1(y_test, knn_preds, classes)),
+    "per_class": precision_recall_f1(y_test, knn_preds, classes)
+}
+with open("sample_data/sample_results/knn_results.json", "w") as f:
+    json.dump(knn_results, f, default=convert_to_serializable)
 
 #Hyperparam tune KNN classifier
 # Pretuning results:

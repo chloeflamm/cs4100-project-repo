@@ -15,8 +15,10 @@ import loompy
 import scanpy as sc
 import pandas as pd
 import numpy as np
+import json
 import celltypist
 from celltypist import models
+from evaluate import auc_roc, print_full_report, accuracy, macro_f1, precision_recall_f1, convert_to_serializable
 
 # Note: CellTypist expects raw data, so we will not use the load_data function from sample_dataloader.py, 
 # which performs normalization and log transformation.
@@ -66,7 +68,7 @@ def run_celltypist(loom_path, metadata):
 
     # After running, using the predicted labels, 
     # I was able to map to the labels in our dataset for evaluation
-    
+
     # Note: CellTypist's model has more specific subtypes of T cells, 
     # so I mapped those to the more general "activated" vs "resting" CD4+ and CD8+ T cell labels 
     # in our dataset. This needs a second look - it could be causing a bottleneck if I was wrong
@@ -94,5 +96,65 @@ def run_celltypist(loom_path, metadata):
 
     return y, y_pred, y_prob
 
+"""
+# For running sample dataset:
+# Run CellTypist locally and evaluate results
+print("\nPretrained CellTypist Baseline Results")
+y_celltypist, celltypist_preds, celltypist_probs = run_celltypist(
+    "sample_data/tcell_blood_sample.loom", # Run using raw data/no normalization
+    "sample_data/tcell_blood_metadata_sample.csv")
+classes_celltypist = np.unique(y_celltypist)
 
+# Used to map the predicted labels from CellTypist to the labels in our dataset for evaluation
+#print("CellTypist predicted labels:", np.unique(celltypist_preds)) 
+print_full_report(y_celltypist, celltypist_preds, celltypist_probs, classes_celltypist) 
+
+# save evaluation metrics results to json
+celltypist_results = {
+    "accuracy": float(accuracy(y_celltypist, celltypist_preds)),
+    "macro_f1": float(macro_f1(y_celltypist, celltypist_preds, classes_celltypist)),
+    "per_class": precision_recall_f1(y_celltypist, celltypist_preds, classes_celltypist),
+    "auc_roc": auc_roc(y_celltypist, celltypist_probs, classes_celltypist)
+}
+with open("sample_data/sample_results/celltypist_results.json", "w") as f:
+    json.dump(celltypist_results, f, default=convert_to_serializable)
+
+"""
+
+
+# For running full dataset: 
+datasets = [
+    ("loom_files/t-cell-activation-human-blood-10XV2.loom", "metadata_files/TCellActivation-Blood-10x_cell_type_2020-03-11.csv"),
+    ("loom_files/t-cell-activation-human-hematopoietic-10XV2.loom", "metadata_files/TCellActivation-bone-marrow-10x_cell_type_2020-03-11.csv"),
+    ("loom_files/t-cell-activation-human-lung-10XV2.loom", "metadata_files/TCellActivation-lung-10x_cell_type_2020-03-11.csv"),
+    ("loom_files/t-cell-activation-human-lymph-10XV2.loom", "metadata_files/TCellActivation-lymph-node-10x_cell_type_2020-03-11.csv")
+]
+
+all_y = []
+all_preds = []
+all_probs = []
+
+for loom_path, csv_path in datasets:
+    print(f"\nProcessing {loom_path}...")
+    y_ct, preds, probs = run_celltypist(loom_path, csv_path)
+    all_y.append(y_ct)
+    all_preds.append(preds)
+    all_probs.append(probs)
+
+# Combine results across all tissues
+y_celltypist = np.concatenate(all_y)
+celltypist_preds = np.concatenate(all_preds)
+celltypist_probs = np.concatenate(all_probs)
+
+classes_celltypist = np.unique(y_celltypist)
+print_full_report(y_celltypist, celltypist_preds, celltypist_probs, classes_celltypist)
+
+celltypist_results = {
+    "accuracy": float(accuracy(y_celltypist, celltypist_preds)),
+    "macro_f1": float(macro_f1(y_celltypist, celltypist_preds, classes_celltypist)),
+    "per_class": precision_recall_f1(y_celltypist, celltypist_preds, classes_celltypist),
+    "auc_roc": auc_roc(y_celltypist, celltypist_probs, classes_celltypist)
+}
+with open("results/celltypist_results.json", "w") as f:
+    json.dump(celltypist_results, f, default=convert_to_serializable)
 
