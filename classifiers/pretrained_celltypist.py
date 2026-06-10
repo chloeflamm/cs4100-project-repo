@@ -96,8 +96,9 @@ def run_celltypist(loom_path, metadata):
 
     return y, y_pred, y_prob
 
-"""
+
 # For running sample dataset:
+"""
 # Run CellTypist locally and evaluate results
 print("\nPretrained CellTypist Baseline Results")
 y_celltypist, celltypist_preds, celltypist_probs = run_celltypist(
@@ -122,7 +123,10 @@ with open("sample_data/sample_results/celltypist_results.json", "w") as f:
 """
 
 
+
 # For running full dataset: 
+
+"""
 datasets = [
     ("loom_files/t-cell-activation-human-blood-10XV2.loom", "metadata_files/TCellActivation-Blood-10x_cell_type_2020-03-11.csv"),
     ("loom_files/t-cell-activation-human-hematopoietic-10XV2.loom", "metadata_files/TCellActivation-bone-marrow-10x_cell_type_2020-03-11.csv"),
@@ -158,3 +162,4 @@ celltypist_results = {
 with open("results/celltypist_results.json", "w") as f:
     json.dump(celltypist_results, f, default=convert_to_serializable)
 
+"""
