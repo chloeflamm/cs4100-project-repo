@@ -18,7 +18,7 @@ import numpy as np
 import json
 import celltypist
 from celltypist import models
-from evaluate import auc_roc, print_full_report, accuracy, macro_f1, precision_recall_f1, convert_to_serializable
+from evaluate import auc_roc, print_full_report, accuracy, macro_f1, precision_recall_f1, convert_to_serializable, confusion_matrix
 
 # Note: CellTypist expects raw data, so we will not use the load_data function from sample_dataloader.py, 
 # which performs normalization and log transformation.
@@ -112,10 +112,12 @@ print_full_report(y_celltypist, celltypist_preds, celltypist_probs, classes_cell
 
 # save evaluation metrics results to json
 celltypist_results = {
+    "classes": classes_celltypist.tolist(),
     "accuracy": float(accuracy(y_celltypist, celltypist_preds)),
     "macro_f1": float(macro_f1(y_celltypist, celltypist_preds, classes_celltypist)),
     "per_class": precision_recall_f1(y_celltypist, celltypist_preds, classes_celltypist),
-    "auc_roc": auc_roc(y_celltypist, celltypist_probs, classes_celltypist)
+    "auc_roc": auc_roc(y_celltypist, celltypist_probs, classes_celltypist),
+    "confusion_matrix": confusion_matrix(y_celltypist, celltypist_preds, classes_celltypist).tolist()
 }
 with open("sample_data/sample_results/celltypist_results.json", "w") as f:
     json.dump(celltypist_results, f, default=convert_to_serializable)
@@ -126,7 +128,6 @@ with open("sample_data/sample_results/celltypist_results.json", "w") as f:
 
 # For running full dataset: 
 
-"""
 datasets = [
     ("loom_files/t-cell-activation-human-blood-10XV2.loom", "metadata_files/TCellActivation-Blood-10x_cell_type_2020-03-11.csv"),
     ("loom_files/t-cell-activation-human-hematopoietic-10XV2.loom", "metadata_files/TCellActivation-bone-marrow-10x_cell_type_2020-03-11.csv"),
@@ -154,12 +155,13 @@ classes_celltypist = np.unique(y_celltypist)
 print_full_report(y_celltypist, celltypist_preds, celltypist_probs, classes_celltypist)
 
 celltypist_results = {
+    "classes": classes_celltypist.tolist(),
     "accuracy": float(accuracy(y_celltypist, celltypist_preds)),
     "macro_f1": float(macro_f1(y_celltypist, celltypist_preds, classes_celltypist)),
     "per_class": precision_recall_f1(y_celltypist, celltypist_preds, classes_celltypist),
-    "auc_roc": auc_roc(y_celltypist, celltypist_probs, classes_celltypist)
+    "auc_roc": auc_roc(y_celltypist, celltypist_probs, classes_celltypist),
+    "confusion_matrix": confusion_matrix(y_celltypist, celltypist_preds, classes_celltypist).tolist()
 }
 with open("results/celltypist_results.json", "w") as f:
     json.dump(celltypist_results, f, default=convert_to_serializable)
 
-"""

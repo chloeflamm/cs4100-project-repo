@@ -19,7 +19,6 @@ from evaluate import *
 from classifiers.knn_classifier import KNN
 from classifiers.ffnn import FFNN
 from classifiers.random_forest import RandomForest
-from classifiers.pretrained_celltypist import run_celltypist
 from dataloader import load_data
 from sample_dataloader import load_data as load_sample_data
 
