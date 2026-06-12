@@ -90,7 +90,7 @@ cs4100-project-repo/
 │   ├── sampledata.py                    # Code to execute to sample data
 │   ├── tcell_blood_metadata_sample.csv  # Sample metadata csv
 │   ├── tcell_blood_sample.loom          # Sample LOOM
-|   ├── sample_results/
+|   └── sample_results/
 │       ├── rf_sample_results.json           # Evaluation metrics for the random forest classifier
 │       ├── celltypist_sample_results.json   # Evaluation metrics for the (sample) CellTypist baseline
 │       ├── ffnn_sample_results.json         # Evaluation metrics for the (sample) feed-forward neural network
