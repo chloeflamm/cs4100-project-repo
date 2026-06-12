@@ -20,32 +20,43 @@ In addition to our from-scratch classifiers, we started by running our data thro
 
 ### II. Setup Requirements
 
-- Dependencies: 
-    - numpy
-    - pandas
-    - loompy
-    - scanpy
-    - celltypist
-    - pytorch
-    - matplotlib
+```text
+pip install -r requirements.txt
+```
+
+[Note] This dataset is extensive in size, and required jobs submitted to Northeastern's High Performance Computer (HPC) cluster for training. 
 
 ### III. Instructions to execute
 
+-  ```text
+    pip install -r requirements.txt
+    ```
 - Dataset Download: 
     - Human Cell Atlas Data Explorer: https://explore.data.humancellatlas.org/projects/4a95101c-9ffc-4f30-a809-f04518a23803/get-curl-command
     - Species: Homo sapiens
     - File Type: csv, loom
     - Shell: Bash
     - (Request curl Command)
-- After placing LOOM files in loom_files/ and metadata in metadata_files/,
-  run: python main.py
+- Place LOOM files in loom_file/ and metadata in metadata_files/
+- [Note] All filepaths are currently in terms of sample_data, if you want to run full dataset, uncomment the appropriate code blocks in all files
+- For sample data, use either sample_data/tcell_blood_metadata_sample.csv and sample_data/tcell_blood_sample.loom OR run:
+  ```text
+  python sampledata.py
+    ```
+- ```text
+  python main.py
+  ```
   This runs from classifiers from scratch and saves results to JSON files in results/ folder.
 - To run pretrained CellTypist baseline on the raw expression data and save to results/,
-  run: python pretrained_celltypist.py
+  run:
+  ```text
+  python pretrained_celltypist.py
+  ```
 - To generate visualizations (F1 score by cell type across classifiers, Confusion matrix heatmaps, ROC curves) after JSON results have been saved,
-  run: python visualize.py. 
-
-- [Note] This dataset is extensive in size, and required jobs submitted to Northeastern's High Performance Computer (HPC) cluster for training. 
+  run:
+  ```text
+  python visualize.py
+  ```
 - [Note] The four target labels used for classification are:
     - activated CD4+ T cell
     - activated CD8+ T cell
@@ -55,27 +66,42 @@ In addition to our from-scratch classifiers, we started by running our data thro
 
 ### IV. Organization of Code 
 
-## Organization of Code
 
 ```text
 cs4100-project-repo/
-├── classifiers/                 # Implemented classifiers
-│   ├── ffnn.py                  # Feed-forward neural network classifier using PyTorch
-│   ├── knn.py                   # K-nearest neighbors classifier
-│   └── rf.py                    # Random forest classifier 
+├── classifiers/                         # Implemented classifiers
+│   ├── ffnn.py                          # Feed-forward neural network classifier using PyTorch
+│   ├── knn.py                           # K-nearest neighbors classifier
+│   └── rf.py                            # Random forest classifier 
 │
-├── loom_files/                  # LOOM gene-expression data files
-├── metadata_files/              # Metadata CSV files
+├── loom_files/                          # LOOM gene-expression data files
+├── metadata_files/                      # Metadata CSV files
 │
-├── results/                     # Saved model outputs and generated figures
-│   ├── ffnn_results.json        # Evaluation metrics for the feed-forward neural network
-│   ├── knn_results.json         # Evaluation metrics for the KNN classifier
-│   ├── rf_results.json          # Evaluation metrics for the random forest classifier
-│   ├── celltypist_results.json  # Evaluation metrics for the CellTypist baseline
-│   └── ...                      # Saved visualization PNGs
+├── results/                             # Saved model outputs and generated figures
+│   ├── ffnn_results.json                # Evaluation metrics for the feed-forward neural network
+│   ├── knn_results.json                 # Evaluation metrics for the KNN classifier
+│   ├── rf_results.json                  # Evaluation metrics for the random forest classifier
+│   ├── celltypist_results.json          # Evaluation metrics for the CellTypist baseline
+│   ├──
+│   ├──
+│   └── roce_curves.png                  # Saved ROC visualizations PNG
+|
+├── sample_data/                         # Sample data, sampling code, dataloading, and sample results
+│   ├── sampledata.py                    # Code to execute to sample data
+│   ├── tcell_blood_metadata_sample.csv  # Sample metadata csv
+│   ├── tcell_blood_sample.loom          # Sample LOOM
+|   └── sample_results/
+│       ├── rf_sample_results.json           # Evaluation metrics for the random forest classifier
+│       ├── celltypist_sample_results.json   # Evaluation metrics for the (sample) CellTypist baseline
+│       ├── ffnn_sample_results.json         # Evaluation metrics for the (sample) feed-forward neural network
+│       ├── knn_sample_results.json          # Evaluation metrics for the (sample) KNN classifier
+│       ├── rf_sample_results.json           # Evaluation metrics for the (sample) random forest classifier
+│       ├──
+│       ├──
+│       └── roc_curves.png                   # Saved ROC visualizations PNG
 │
-├── dataloader.py                # Loads, matches, preprocesses, and splits expression/metadata files
-├── evaluate.py                  # Shared evaluation metrics: accuracy, F1, confusion matrix, AUC-ROC
-├── main.py                      # Main training/evaluation pipeline for project classifiers
-├── pretrained_celltypist.py     # Runs the pretrained CellTypist baseline and maps labels
-└── visualization.py             # Generates result visualizations from saved JSON files
+├── dataloader.py                        # Loads, matches, preprocesses, and splits expression/metadata files
+├── evaluate.py                          # Shared evaluation metrics: accuracy, F1, confusion matrix, AUC-ROC
+├── main.py                              # Main training/evaluation pipeline for project classifiers
+├── pretrained_celltypist.py             # Runs the pretrained CellTypist baseline and maps labels
+└── visualization.py                     # Generates result visualizations from saved JSON files
