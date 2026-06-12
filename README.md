@@ -38,6 +38,7 @@ pip install -r requirements.txt
     - Shell: Bash
     - (Request curl Command)
 - Place LOOM files in loom_file/ and metadata in metadata_files/
+- [Note] All filepaths are currently in terms of sample_data, if you want to run full dataset, uncomment the appropriate code blocks in all files
 - For sample data, use either sample_data/tcell_blood_metadata_sample.csv and sample_data/tcell_blood_sample.loom OR run:
   ```text
     python sampledata.py
@@ -54,7 +55,7 @@ pip install -r requirements.txt
 - To generate visualizations (F1 score by cell type across classifiers, Confusion matrix heatmaps, ROC curves) after JSON results have been saved,
   run:
   ```text
-  python visualize.py.
+  python visualize.py
   ```
 - [Note] The four target labels used for classification are:
     - activated CD4+ T cell
@@ -68,23 +69,36 @@ pip install -r requirements.txt
 
 ```text
 cs4100-project-repo/
-├── classifiers/                 # Implemented classifiers
-│   ├── ffnn.py                  # Feed-forward neural network classifier using PyTorch
-│   ├── knn.py                   # K-nearest neighbors classifier
-│   └── rf.py                    # Random forest classifier 
+├── classifiers/                         # Implemented classifiers
+│   ├── ffnn.py                          # Feed-forward neural network classifier using PyTorch
+│   ├── knn.py                           # K-nearest neighbors classifier
+│   └── rf.py                            # Random forest classifier 
 │
-├── loom_files/                  # LOOM gene-expression data files
-├── metadata_files/              # Metadata CSV files
+├── loom_files/                          # LOOM gene-expression data files
+├── metadata_files/                      # Metadata CSV files
 │
-├── results/                     # Saved model outputs and generated figures
-│   ├── ffnn_results.json        # Evaluation metrics for the feed-forward neural network
-│   ├── knn_results.json         # Evaluation metrics for the KNN classifier
-│   ├── rf_results.json          # Evaluation metrics for the random forest classifier
-│   ├── celltypist_results.json  # Evaluation metrics for the CellTypist baseline
-│   └── ...                      # Saved visualization PNGs
+├── results/                             # Saved model outputs and generated figures
+│   ├── ffnn_results.json                # Evaluation metrics for the feed-forward neural network
+│   ├── knn_results.json                 # Evaluation metrics for the KNN classifier
+│   ├── rf_results.json                  # Evaluation metrics for the random forest classifier
+│   ├── celltypist_results.json          # Evaluation metrics for the CellTypist baseline
+│   ├──
+│   ├──
+│   └── roce_curves.png                  # Saved ROC visualizations PNG
+|
+├── sample_data/                         # Sample data, sampling code, dataloading, and sample results
+│   ├── sampledata.py                    # Code to execute to sample data
+│   ├── rf_sample_results.json           # Evaluation metrics for the random forest classifier
+│   ├── celltypist_sample_results.json   # Evaluation metrics for the (sample) CellTypist baseline
+│   ├── ffnn_sample_results.json         # Evaluation metrics for the (sample) feed-forward neural network
+│   ├── knn_sample_results.json          # Evaluation metrics for the (sample) KNN classifier
+│   ├── rf_sample_results.json           # Evaluation metrics for the (sample) random forest classifier
+│   ├──
+│   ├──
+│   └── roc_curves.png                   # Saved ROC visualizations PNG
 │
-├── dataloader.py                # Loads, matches, preprocesses, and splits expression/metadata files
-├── evaluate.py                  # Shared evaluation metrics: accuracy, F1, confusion matrix, AUC-ROC
-├── main.py                      # Main training/evaluation pipeline for project classifiers
-├── pretrained_celltypist.py     # Runs the pretrained CellTypist baseline and maps labels
-└── visualization.py             # Generates result visualizations from saved JSON files
+├── dataloader.py                        # Loads, matches, preprocesses, and splits expression/metadata files
+├── evaluate.py                          # Shared evaluation metrics: accuracy, F1, confusion matrix, AUC-ROC
+├── main.py                              # Main training/evaluation pipeline for project classifiers
+├── pretrained_celltypist.py             # Runs the pretrained CellTypist baseline and maps labels
+└── visualization.py                     # Generates result visualizations from saved JSON files
