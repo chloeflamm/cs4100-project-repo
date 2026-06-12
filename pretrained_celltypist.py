@@ -72,7 +72,7 @@ def run_celltypist(loom_path, metadata):
 
     # Note: CellTypist's model has more specific subtypes of T cells, 
     # so I mapped those to the more general "activated" vs "resting" CD4+ and CD8+ T cell labels 
-    # in our dataset. This needs a second look - it could be causing a bottleneck if I was wrong
+    # in our dataset. 
     
     target_classes = np.array([
     "activated CD4+ T cell",
