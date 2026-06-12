@@ -41,7 +41,7 @@ pip install -r requirements.txt
 - [Note] All filepaths are currently in terms of sample_data, if you want to run full dataset, uncomment the appropriate code blocks in all files
 - For sample data, use either sample_data/tcell_blood_metadata_sample.csv and sample_data/tcell_blood_sample.loom OR run:
   ```text
-    python sampledata.py
+  python sampledata.py
     ```
 - ```text
   python main.py
