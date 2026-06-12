@@ -1,1 +1,64 @@
-{"classes": ["activated CD4+ T cell", "activated CD8+ T cell", "resting CD4+ T cell", "resting CD8+ T cell"], "accuracy": 0.39602295211713495, "macro_f1": 0.30586757091296035, "per_class": {"activated CD4+ T cell": {"precision": 0.3868795101682104, "recall": 0.31814421866559317, "f1": 0.34916123443953245}, "activated CD8+ T cell": {"precision": 0.43147208121743175, "recall": 0.25156516789954286, "f1": 0.3178255508220808}, "resting CD4+ T cell": {"precision": 0.4011833465617045, "recall": 0.6716057336122275, "f1": 0.5023112897930349}, "resting CD8+ T cell": {"precision": 0.2390939597295378, "recall": 0.030546623794179474, "f1": 0.054172208597193135}}, "auc_roc": {"activated CD4+ T cell": 0.6483134331661877, "activated CD8+ T cell": 0.4885984316725712, "resting CD4+ T cell": 0.4659926504627063, "resting CD8+ T cell": 0.41384898372249473}, "confusion_matrix": [[8846, 197, 18475, 287], [2777, 2210, 3472, 326], [7604, 258, 16680, 294], [3638, 2457, 2950, 285]]}
+{
+  "classes": [
+    "activated CD4+ T cell",
+    "activated CD8+ T cell",
+    "resting CD4+ T cell",
+    "resting CD8+ T cell"
+  ],
+  "accuracy": 0.39602295211713495,
+  "macro_f1": 0.30586757091296035,
+  "per_class": {
+    "activated CD4+ T cell": {
+      "precision": 0.3868795101682104,
+      "recall": 0.31814421866559317,
+      "f1": 0.34916123443953245
+    },
+    "activated CD8+ T cell": {
+      "precision": 0.43147208121743175,
+      "recall": 0.25156516789954286,
+      "f1": 0.3178255508220808
+    },
+    "resting CD4+ T cell": {
+      "precision": 0.4011833465617045,
+      "recall": 0.6716057336122275,
+      "f1": 0.5023112897930349
+    },
+    "resting CD8+ T cell": {
+      "precision": 0.2390939597295378,
+      "recall": 0.030546623794179474,
+      "f1": 0.054172208597193135
+    }
+  },
+  "auc_roc": {
+    "activated CD4+ T cell": 0.6483134331661877,
+    "activated CD8+ T cell": 0.4885984316725712,
+    "resting CD4+ T cell": 0.4659926504627063,
+    "resting CD8+ T cell": 0.41384898372249473
+  },
+  "confusion_matrix": [
+    [
+      8846,
+      197,
+      18475,
+      287
+    ],
+    [
+      2777,
+      2210,
+      3472,
+      326
+    ],
+    [
+      7604,
+      258,
+      16680,
+      294
+    ],
+    [
+      3638,
+      2457,
+      2950,
+      285
+    ]
+  ]
+}
