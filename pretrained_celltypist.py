@@ -178,9 +178,6 @@ celltypist_results = {
     "auc_roc": auc_roc(y_celltypist, celltypist_probs, classes_celltypist),
     "confusion_matrix": confusion_matrix(y_celltypist, celltypist_preds, classes_celltypist).tolist()
 }
-# ROC Plot binary files
-np.save("results/celltypist_probs.npy", celltypist_probs)
-np.save("results/celltypist_y.npy", y_celltypist)
 
 with open("results/celltypist_results.json", "w") as f:
     json.dump(celltypist_results, f, default=convert_to_serializable, indent=2)
