@@ -34,16 +34,28 @@ pip install -r requirements.txt
     - File Type: csv, loom
     - Shell: Bash
     - (Request curl Command)
+- Place LOOM files in loom_file/ and metadata in metadata_files/
+- For sample data, use either sample_data/tcell_blood_metadata_sample.csv and sample_data/tcell_blood_sample.loom OR run:
+- ```text
+    python sampledata.py
+    ```
 -  ```text
     pip install -r requirements.txt
     ```
-- After placing LOOM files in loom_files/ and metadata in metadata_files/,
-  run: python main.py
+- ```text
+  python main.py
+  ```
   This runs from classifiers from scratch and saves results to JSON files in results/ folder.
 - To run pretrained CellTypist baseline on the raw expression data and save to results/,
-  run: python pretrained_celltypist.py
+  run:
+  ```text
+  python pretrained_celltypist.py
+  ```
 - To generate visualizations (F1 score by cell type across classifiers, Confusion matrix heatmaps, ROC curves) after JSON results have been saved,
-  run: python visualize.py. 
+  run:
+  ```text
+  python visualize.py.
+  ```
 
 - [Note] The four target labels used for classification are:
     - activated CD4+ T cell
