@@ -88,14 +88,17 @@ cs4100-project-repo/
 |
 ├── sample_data/                         # Sample data, sampling code, dataloading, and sample results
 │   ├── sampledata.py                    # Code to execute to sample data
-│   ├── rf_sample_results.json           # Evaluation metrics for the random forest classifier
-│   ├── celltypist_sample_results.json   # Evaluation metrics for the (sample) CellTypist baseline
-│   ├── ffnn_sample_results.json         # Evaluation metrics for the (sample) feed-forward neural network
-│   ├── knn_sample_results.json          # Evaluation metrics for the (sample) KNN classifier
-│   ├── rf_sample_results.json           # Evaluation metrics for the (sample) random forest classifier
-│   ├──
-│   ├──
-│   └── roc_curves.png                   # Saved ROC visualizations PNG
+│   ├── tcell_blood_metadata_sample.csv  # Sample metadata csv
+│   ├── tcell_blood_sample.loom          # Sample LOOM
+|   ├── sample_results/
+│       ├── rf_sample_results.json           # Evaluation metrics for the random forest classifier
+│       ├── celltypist_sample_results.json   # Evaluation metrics for the (sample) CellTypist baseline
+│       ├── ffnn_sample_results.json         # Evaluation metrics for the (sample) feed-forward neural network
+│       ├── knn_sample_results.json          # Evaluation metrics for the (sample) KNN classifier
+│       ├── rf_sample_results.json           # Evaluation metrics for the (sample) random forest classifier
+│       ├──
+│       ├──
+│       └── roc_curves.png                   # Saved ROC visualizations PNG
 │
 ├── dataloader.py                        # Loads, matches, preprocesses, and splits expression/metadata files
 ├── evaluate.py                          # Shared evaluation metrics: accuracy, F1, confusion matrix, AUC-ROC
