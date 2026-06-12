@@ -34,7 +34,9 @@ pip install -r requirements.txt
     - File Type: csv, loom
     - Shell: Bash
     - (Request curl Command)
-- pip install -r requirements.txt
+-  ```text
+    pip install -r requirements.txt
+    ```
 - After placing LOOM files in loom_files/ and metadata in metadata_files/,
   run: python main.py
   This runs from classifiers from scratch and saves results to JSON files in results/ folder.
