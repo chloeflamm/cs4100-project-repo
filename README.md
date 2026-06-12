@@ -51,7 +51,7 @@ In addition to our from-scratch classifiers, we started by running our data thro
     - activated CD8+ T cell
     - resting CD4+ T cell
     - resting CD8+ T cell
-Unassigned labels are excluded from the main classification task so that all classifiers are evaluated on the same four-class problem.
+- Unassigned labels are excluded from the main classification task so that all classifiers are evaluated on the same four-class problem.
 
 ### IV. Organization of Code 
 
