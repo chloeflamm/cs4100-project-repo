@@ -20,6 +20,7 @@ import celltypist
 from celltypist import models
 from evaluate import auc_roc, print_full_report, accuracy, macro_f1, precision_recall_f1, convert_to_serializable, confusion_matrix
 
+
 # Note: CellTypist expects raw data, so we will not use the load_data function from sample_dataloader.py, 
 # which performs normalization and log transformation.
 
@@ -73,6 +74,13 @@ def run_celltypist(loom_path, metadata):
     # so I mapped those to the more general "activated" vs "resting" CD4+ and CD8+ T cell labels 
     # in our dataset. This needs a second look - it could be causing a bottleneck if I was wrong
     
+    target_classes = np.array([
+    "activated CD4+ T cell",
+    "activated CD8+ T cell",
+    "resting CD4+ T cell",
+    "resting CD8+ T cell"
+])
+
     label_map = {
     "Tcm/Naive helper T cells": "resting CD4+ T cell",
     "Tem/Effector helper T cells": "activated CD4+ T cell",
@@ -88,14 +96,17 @@ def run_celltypist(loom_path, metadata):
     Prompt: how do I create a mask for the labels in my dataset 
     and filter out unmapped cells?
     """
-    # Map predictions to your label set, filter out unmapped cells (NK cells)
-    mask = np.array([label_map.get(p) is not None for p in y_pred])
+    # Map predictions to our four-label set, and remove rows outside evaluation labels
+    mapped_pred_mask = np.array([label_map.get(p) is not None for p in y_pred])
+    true_label_mask = np.isin(y, target_classes)
+
+    mask = mapped_pred_mask & true_label_mask
+
     y = y[mask]
     y_pred = np.array([label_map[p] for p in y_pred[mask]])
     y_prob = predictions.probability_matrix.values[mask]
 
     return y, y_pred, y_prob
-
 
 # For running sample dataset:
 """
@@ -151,7 +162,12 @@ y_celltypist = np.concatenate(all_y)
 celltypist_preds = np.concatenate(all_preds)
 celltypist_probs = np.concatenate(all_probs)
 
-classes_celltypist = np.unique(y_celltypist)
+classes_celltypist = np.array([
+    "activated CD4+ T cell",
+    "activated CD8+ T cell",
+    "resting CD4+ T cell",
+    "resting CD8+ T cell"
+])
 print_full_report(y_celltypist, celltypist_preds, celltypist_probs, classes_celltypist)
 
 celltypist_results = {
@@ -163,5 +179,5 @@ celltypist_results = {
     "confusion_matrix": confusion_matrix(y_celltypist, celltypist_preds, classes_celltypist).tolist()
 }
 with open("results/celltypist_results.json", "w") as f:
-    json.dump(celltypist_results, f, default=convert_to_serializable)
+    json.dump(celltypist_results, f, default=convert_to_serializable, indent=2)
 
