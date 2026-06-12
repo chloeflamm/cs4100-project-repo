@@ -37,7 +37,7 @@ In addition to our from-scratch classifiers, we started by running our data thro
     - File Type: csv, loom
     - Shell: Bash
     - (Request curl Command)
-- After placing LOOM files in loom_files/ and metadata in metadata_file/,
+- After placing LOOM files in loom_files/ and metadata in metadata_files/,
   run: python main.py
   This runs from classifiers from scratch and saves results to JSON files in results/ folder.
 - To run pretrained CellTypist baseline on the raw expression data and save to results/,
