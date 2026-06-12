@@ -36,7 +36,7 @@ pip install -r requirements.txt
     - (Request curl Command)
 - Place LOOM files in loom_file/ and metadata in metadata_files/
 - For sample data, use either sample_data/tcell_blood_metadata_sample.csv and sample_data/tcell_blood_sample.loom OR run:
-- ```text
+  ```text
     python sampledata.py
     ```
 -  ```text
