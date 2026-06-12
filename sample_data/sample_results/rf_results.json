@@ -1,0 +1,64 @@
+{
+  "classes": [
+    "activated CD4+ T cell",
+    "activated CD8+ T cell",
+    "resting CD4+ T cell",
+    "resting CD8+ T cell"
+  ],
+  "accuracy": 0.6534653465346535,
+  "macro_f1": 0.5885813988548076,
+  "per_class": {
+    "activated CD4+ T cell": {
+      "precision": 0.6785714283290816,
+      "recall": 0.5757575755831037,
+      "f1": 0.622950814501478
+    },
+    "activated CD8+ T cell": {
+      "precision": 0.7999999984,
+      "recall": 0.3333333330555555,
+      "f1": 0.47058823058823535
+    },
+    "resting CD4+ T cell": {
+      "precision": 0.5999999999,
+      "recall": 0.9729729727100073,
+      "f1": 0.7422680363651823
+    },
+    "resting CD8+ T cell": {
+      "precision": 0.8749999989062499,
+      "recall": 0.3684210524376731,
+      "f1": 0.5185185139643348
+    }
+  },
+  "auc_roc": {
+    "activated CD4+ T cell": 0.8832442063760801,
+    "activated CD8+ T cell": 0.7743445685560973,
+    "resting CD4+ T cell": 0.9260979725779738,
+    "resting CD8+ T cell": 0.8889602048152438
+  },
+  "confusion_matrix": [
+    [
+      19,
+      1,
+      12,
+      1
+    ],
+    [
+      6,
+      4,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      36,
+      0
+    ],
+    [
+      2,
+      0,
+      10,
+      7
+    ]
+  ]
+}

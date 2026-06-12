@@ -68,10 +68,10 @@ def load_single(loom_path, csv_path):
         indices = np.where(mask)[0]
 
         if len(indices) == 0:
-            print(f"WARNING: No barcode matches in {os.path.basename(loom_path)}")
+            print(f"  WARNING: No barcode matches in {os.path.basename(loom_path)}")
             return None, None
 
-        print(f"{os.path.basename(loom_path)}: matched {len(indices)} cells")
+        print(f"  {os.path.basename(loom_path)}: matched {len(indices)} cells")
         X = ds[:, indices].T  # shape: (cells x genes)
         matched_barcodes = cell_ids[indices]
 
@@ -99,10 +99,10 @@ def load_data(loom_dir, csv_dir, n_top_genes=500, n_pca_components=50):
         csv_path  = os.path.join(csv_dir,  csv_fname)
 
         if not os.path.exists(loom_path):
-            print(f"MISSING LOOM: {loom_fname} — skipping")
+            print(f"  MISSING LOOM: {loom_fname} — skipping")
             continue
         if not os.path.exists(csv_path):
-            print(f"MISSING CSV: {csv_fname} — skipping")
+            print(f"  MISSING CSV: {csv_fname} — skipping")
             continue
 
         X, y = load_single(loom_path, csv_path)

@@ -1,24 +1,16 @@
-'''
-evaluate.py saves raw results in results/ as .json and .npy files. This script loads those results and creates visualizations:
-'''
-
-import json 
+import json as js
 import numpy as np
 import matplotlib.pyplot as plt
 
-demo = True  # set to True to load sample results instead of full results
-results_dir = "sample_data/sample_results" if demo else "results"
-
 def load_results(model_name):
-    with open(f"{results_dir}/{model_name}_results.json", "r") as f:
-        return json.load(f)
+    with open(f"results/{model_name}_results.json", "r") as f:
+        return js.load(f)
 
 results = {"KNN": load_results("knn"),
            "RF": load_results("rf"),
            "FFNN": load_results("ffnn"),
            "CellTypist": load_results("celltypist")}
 
-# ROC Curves by model and class (one subplot per class, one curve per model)
 def plot_roc_grid(y_test, probs_dict, classes):
     """
     probs_dict: {"KNN": np.array, "RF": np.array, "FFNN": np.array}
@@ -46,15 +38,14 @@ def plot_roc_grid(y_test, probs_dict, classes):
 
         # Plot configurations
         ax.plot([0, 1], [0, 1], "k--", linewidth=0.8)
-        ax.set_title(c, fontsize=25)
-        ax.set_xlabel("FPR", fontsize=25)
-        ax.set_ylabel("TPR", fontsize=25)
-        ax.tick_params(axis='both', labelsize=20)
-        ax.legend(fontsize=18)
+        ax.set_title(c, fontsize=11)
+        ax.set_xlabel("FPR")
+        ax.set_ylabel("TPR")
+        ax.legend(fontsize=8)
 
-    plt.suptitle("ROC Curves by Class", fontsize=25, fontweight="bold")
+    plt.suptitle("ROC Curves by Class", fontsize=14, fontweight="bold")
     plt.tight_layout()
-    plt.savefig(f"{results_dir}/roc_curves.png", dpi=300, bbox_inches="tight")
+    plt.savefig("results/roc_curves.png", dpi=300, bbox_inches="tight")
     plt.show()
 
 # Load saved raw probability graphs
@@ -64,103 +55,4 @@ probs_dict = {"KNN": np.load("results/knn_probs.npy"),
               "FFNN": np.load("results/ffnn_probs.npy")}
 
 classes = results["KNN"]["classes"]
-
-if not demo:
-    y_test = np.load(f"{results_dir}/y_test.npy", allow_pickle=True)
-    probs_dict = {"KNN": np.load(f"{results_dir}/knn_probs.npy"),
-                  "RF": np.load(f"{results_dir}/rf_probs.npy"),
-                  "FFNN": np.load(f"{results_dir}/ffnn_probs.npy")}
-    classes = results["KNN"]["classes"]
-    plot_roc_grid(y_test, probs_dict, classes)
-
-
-# Grouped Bar Chart (F1 score by Cell Type/Classifier)
-def plot_per_class_f1(results):
-    # class order from first model
-    first_model = list(results.keys())[0]
-    classes = results[first_model]["classes"]
-
-    # names of each classifier
-    model_names = list(results.keys())
-
-    # one pos. per cell type
-    x = np.arange(len(classes))
-    width = 0.8 / len(model_names) # width so all classifiers fit
-
-    plt.figure(figsize=(14, 7))
-
-    # one bar for each classifier per cell type
-    for i, model_name in enumerate(model_names):
-        # saved f1 score 
-        f1_scores = [
-            results[model_name]["per_class"][cell_type]["f1"]
-            for cell_type in classes
-        ]
-        # make bars side-by-side
-        offset = (i - (len(model_names) - 1) / 2) * width
-        plt.bar(x + offset, f1_scores, width, label=model_name)
-
-    plt.xticks(x, classes, rotation=30, ha="right")
-    plt.ylim(0, 1)
-    plt.xlabel("Cell Type", fontsize=18)
-    plt.ylabel("F1 Score", fontsize=18)
-    plt.title("F1 Score by Cell Type Across Classifiers", fontsize=18, fontweight="bold", pad=40)
-    plt.tick_params(axis='both', labelsize=15)
-    plt.legend(fontsize=15, loc='upper center', bbox_to_anchor=(0.5, 1.12), ncol=len(model_names))
-    plt.tight_layout()
-    plt.savefig(f"{results_dir}/f1_by_cell_type.png", dpi=300, bbox_inches="tight")
-    plt.show()
-
-plot_per_class_f1(results)
-
-
-# Confusion Matrix Heatmaps
-def plot_all_confusion_heatmaps(results):
-   # names of each classifier
-    model_names = list(results.keys())
-
-    # shortened labels for readability
-    short_labels = [
-        "Act. CD4+",
-        "Act. CD8+",
-        "Rest. CD4+",
-        "Rest. CD8+"
-    ]
-
-    # create 2 x 2 grid of plots
-    fig, axes = plt.subplots(2, 2, figsize=(16, 12))
-    # flatten axes 
-    axes = axes.flatten()
-
-    for ax, model_name in zip(axes, model_names):
-        # get confusion matrix and class labels 
-        conf_matrix = np.array(results[model_name]["confusion_matrix"])
-        classes = results[model_name]["classes"]
-
-        im = ax.imshow(conf_matrix, interpolation="nearest")
-        ax.set_title(f"Confusion Matrix - {model_name}")
-
-        # labels
-        tick_marks = np.arange(len(short_labels))
-        ax.set_xticks(tick_marks)
-        ax.set_yticks(tick_marks)
-        ax.set_xticklabels(short_labels, rotation=30, ha="right")
-        ax.set_yticklabels(short_labels)
-
-        # Add axis labels.
-        ax.set_xlabel("Predicted Cell Type")
-        ax.set_ylabel("True Cell Type")
-
-        # count values inside each cell
-        for i in range(conf_matrix.shape[0]):
-            for j in range(conf_matrix.shape[1]):
-                ax.text(j, i, conf_matrix[i, j], ha="center", va="center")
-
-        fig.colorbar(im, ax=ax)
-
-    plt.tight_layout()
-    plt.subplots_adjust(bottom=0.12, hspace=0.35) # need more bottom space for pred. cells
-    plt.savefig(f"{results_dir}/confusion_matrix_heatmaps.png", dpi=300, bbox_inches="tight")
-    plt.show()
-
-plot_all_confusion_heatmaps(results)
+plot_roc_grid(y_test, probs_dict, classes)
