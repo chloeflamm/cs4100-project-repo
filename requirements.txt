@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+torch
+loompy
+scanpy
+celltypist
+anndata
+h5py
+scipy
