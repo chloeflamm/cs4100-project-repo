@@ -26,9 +26,8 @@ class KNN:
     '''
     def predict(self, X, batch_size=500):
         """
-        Batched vectorized prediction with vote fraction probabilities.
+        Batched vectorized prediction with vote fraction probabilities for estimations.
         Computes distances for 500 cells at once instead of one by one.
-        Vote fractions are used as probability estimates.
         Returns (predictions, probabilities).
         """
         predictions  = []

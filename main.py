@@ -16,32 +16,30 @@ from evaluate import *
 from classifiers.knn_classifier import KNN
 from classifiers.ffnn import FFNN
 from classifiers.random_forest import RandomForest
-from dataloader import load_data
-from sample_data.sample_dataloader import load_data_sample
+from dataloader import load_data, load_single
 
-# Create results folder if it doesn't exist
-os.makedirs("results", exist_ok=True)
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-'''
-# Uncomment for demo with sample data
-X, y = load_data_sample(
-    "sample_data/tcell_blood_sample.loom",
-    "sample_data/tcell_blood_metadata_sample.csv"
-)
-'''
+
+demo = True # set to false to run on full dataset and generate final results for paper (note: will take a few minutes to load on HPC cluster due to large size)
+results_dir = "sample_data/sample_results" if demo else "results"
+
+os.makedirs(results_dir, exist_ok=True)
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
 def save_results(name, results_dict):
     '''Save a single classifier's results to results/{name}_results.json.'''
-    path = os.path.join("results", f"{name}_results.json")
+    path = os.path.join(results_dir, f"{name}_results.json")
     with open(path, "w") as f:
         json.dump(results_dict, f, indent=2)
     print(f"Saved to {path}")
 
-# Load full dataset for remaining classifiers
-# Note: this will take a few minutes to load on HPC cluster due to large size
-# Comment this out in order to run the demonstration with the sample data above
-X, y = load_data(
-    loom_dir=os.path.join(BASE_DIR, "loom_files/"),
-    csv_dir=os.path.join(BASE_DIR, "metadata_files/"))
+if demo:
+    X, y = load_single(
+        os.path.join(base_dir, "sample_data/tcell_blood_sample.loom"),
+        os.path.join(base_dir, "sample_data/tcell_blood_metadata_sample.csv"))
+else:
+    X, y = load_data(
+        loom_dir=os.path.join(base_dir, "loom_files/"),
+        csv_dir=os.path.join(base_dir, "metadata_files/"))
 
 classes = np.unique(y)
 print("Classes:", classes)
@@ -115,10 +113,8 @@ save_results("ffnn", {
     "loss_history": [float(x) for x in ffnn.loss_history],
     "auc_roc": {c: float(v) for c, v in ffnn_aucs.items()}
 })
-
-
-# Raw ROC Classifier Probabilities for plotting
-np.save("results/y_test.npy", y_test)
-np.save("results/knn_probs.npy", knn_probs)
-np.save("results/rf_probs.npy", rf_probs)
-np.save("results/ffnn_probs.npy", ffnn_probs)
+if not demo:
+    np.save(f"{results_dir}/y_test.npy", y_test)
+    np.save(f"{results_dir}/knn_probs.npy", knn_probs)
+    np.save(f"{results_dir}/rf_probs.npy", rf_probs)
+    np.save(f"{results_dir}/ffnn_probs.npy", ffnn_probs)

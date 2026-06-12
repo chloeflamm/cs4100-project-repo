@@ -16,7 +16,6 @@ import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 
-
 class FFNN(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, lr=0.001, epochs=100, dropout=0.3):
         super(FFNN, self).__init__()
@@ -60,10 +59,10 @@ class FFNN(nn.Module):
 
         # Since CD4 cells outnumber CD8 the class weights penalize the model more for misclassifying
         # minority classes so it doesn't just predict CD4 for everything
-        class_counts  = np.bincount(y_encoded)
+        class_counts = np.bincount(y_encoded)
         class_weights = 1.0 / (class_counts + 1e-8)
         class_weights = class_weights / class_weights.sum() * len(self.classes)
-        weights_t     = torch.FloatTensor(class_weights)
+        weights_t = torch.FloatTensor(class_weights)
 
         # CrossEntropyLoss combines log softmax + negative log likelihood
         criterion = nn.CrossEntropyLoss(weight=weights_t)
@@ -77,7 +76,7 @@ class FFNN(nn.Module):
         for epoch in range(self.epochs):
             optimizer.zero_grad() # clear gradients from previous step
             logits = self.forward(X_t) # forward pass
-            loss   = criterion(logits, y_t) # compute loss
+            loss = criterion(logits, y_t) # compute loss
             loss.backward() # backprop
             optimizer.step() # update weights
 

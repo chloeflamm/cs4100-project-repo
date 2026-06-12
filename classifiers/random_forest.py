@@ -62,17 +62,17 @@ class DecisionTree:
         left_idx  = X[:, best_feature] <= best_threshold
         right_idx = X[:, best_feature] >  best_threshold
 
-        node           = Node()
-        node.feature   = best_feature
+        node = Node()
+        node.feature = best_feature
         node.threshold = best_threshold
-        node.left      = self.build_tree(X[left_idx],  y[left_idx],  depth + 1)
-        node.right     = self.build_tree(X[right_idx], y[right_idx], depth + 1)
+        node.left = self.build_tree(X[left_idx],  y[left_idx],  depth + 1)
+        node.right = self.build_tree(X[right_idx], y[right_idx], depth + 1)
         return node
 
     def find_best_split(self, X, y, features_to_try):
         """Finds best feature/threshold by minimizing weighted gini impurity."""
-        best_gini      = float('inf')
-        best_feature   = None
+        best_gini = float('inf')
+        best_feature = None
         best_threshold = None
 
         for feature in features_to_try:
@@ -90,10 +90,9 @@ class DecisionTree:
 
                 gini = self.weighted_gini(left_y, right_y)
                 if gini < best_gini:
-                    best_gini      = gini
-                    best_feature   = feature
+                    best_gini = gini
+                    best_feature = feature
                     best_threshold = threshold
-
         return best_feature, best_threshold
 
     def gini(self, y):
