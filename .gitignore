@@ -2,3 +2,4 @@ loom_files/
 metadata_files/
 .DS_Store
 **/.DS_Store
+results/*.npy
