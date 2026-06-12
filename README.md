@@ -28,6 +28,9 @@ pip install -r requirements.txt
 
 ### III. Instructions to execute
 
+-  ```text
+    pip install -r requirements.txt
+    ```
 - Dataset Download: 
     - Human Cell Atlas Data Explorer: https://explore.data.humancellatlas.org/projects/4a95101c-9ffc-4f30-a809-f04518a23803/get-curl-command
     - Species: Homo sapiens
@@ -38,9 +41,6 @@ pip install -r requirements.txt
 - For sample data, use either sample_data/tcell_blood_metadata_sample.csv and sample_data/tcell_blood_sample.loom OR run:
   ```text
     python sampledata.py
-    ```
--  ```text
-    pip install -r requirements.txt
     ```
 - ```text
   python main.py
@@ -56,7 +56,6 @@ pip install -r requirements.txt
   ```text
   python visualize.py.
   ```
-
 - [Note] The four target labels used for classification are:
     - activated CD4+ T cell
     - activated CD8+ T cell
