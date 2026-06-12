@@ -20,14 +20,11 @@ In addition to our from-scratch classifiers, we started by running our data thro
 
 ### II. Setup Requirements
 
-- Dependencies: 
-    - numpy
-    - pandas
-    - loompy
-    - scanpy
-    - celltypist
-    - pytorch
-    - matplotlib
+```text
+pip install -r requirements.txt
+```
+
+[Note] This dataset is extensive in size, and required jobs submitted to Northeastern's High Performance Computer (HPC) cluster for training. 
 
 ### III. Instructions to execute
 
@@ -37,6 +34,7 @@ In addition to our from-scratch classifiers, we started by running our data thro
     - File Type: csv, loom
     - Shell: Bash
     - (Request curl Command)
+- pip install -r requirements.txt
 - After placing LOOM files in loom_files/ and metadata in metadata_files/,
   run: python main.py
   This runs from classifiers from scratch and saves results to JSON files in results/ folder.
@@ -45,7 +43,6 @@ In addition to our from-scratch classifiers, we started by running our data thro
 - To generate visualizations (F1 score by cell type across classifiers, Confusion matrix heatmaps, ROC curves) after JSON results have been saved,
   run: python visualize.py. 
 
-- [Note] This dataset is extensive in size, and required jobs submitted to Northeastern's High Performance Computer (HPC) cluster for training. 
 - [Note] The four target labels used for classification are:
     - activated CD4+ T cell
     - activated CD8+ T cell
@@ -55,7 +52,6 @@ In addition to our from-scratch classifiers, we started by running our data thro
 
 ### IV. Organization of Code 
 
-## Organization of Code
 
 ```text
 cs4100-project-repo/
