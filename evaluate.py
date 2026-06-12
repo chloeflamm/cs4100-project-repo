@@ -1,3 +1,10 @@
+"""
+evaluate.py
+Authors: Nasir Stanley, Chloe Flamm
+
+Evaluation functions for T-cell classification including accuracy, confusion matrix, precision/recall/F1,
+macro F1, AUC-ROC, cross-validation, and full report printing.
+"""
 import numpy as np
 
 def accuracy(y_true, y_pred):
@@ -109,9 +116,12 @@ def print_full_report(y_true, y_pred, y_prob, classes):
         aucs = auc_roc(y_true, y_prob, classes)
         print("\nAUC-ROC (one-vs-rest):")
         for c in classes:
-            print(f"  {c}: {aucs[c]:.4f}")
-        print(f"  Mean AUC: {np.mean(list(aucs.values())):.4f}")
-
+            print(f"{c}: {aucs[c]:.4f}")
+        print(f"Mean AUC: {np.mean(list(aucs.values())):.4f}")
+    '''
+    AI Usage:
+    Prompt: How can I get my confusion matrix to print out a full report without sacrificing characters?
+    '''
     print("\nConfusion Matrix:")
     cm = confusion_matrix(y_true, y_pred, classes)
     col_width = max(len(c) for c in classes) + 2

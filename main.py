@@ -2,16 +2,13 @@
 main.py
 Authors: Nasir Stanley, Chloe Flamm
 
-Entry point for T-Cell activation state classification project.
-Runs all four classifiers and saves each result to results/ folder.
-
-- CellTypist: pretrained baseline, fed raw data directly
+Runs three classifiers and saves each result to results/ folder.
 - KNN, RF, FFNN: trained on full dataset using Northeastern HPC Explorer Cluster
 
 Results saved to:
-    results/knn_results.json
-    results/rf_results.json
-    results/ffnn_results.json
+    - results/knn_results.json
+    - results/rf_results.json
+    - results/ffnn_results.json
 """
 import os
 import json
@@ -20,12 +17,18 @@ from classifiers.knn_classifier import KNN
 from classifiers.ffnn import FFNN
 from classifiers.random_forest import RandomForest
 from dataloader import load_data
-from sample_dataloader import load_data as load_sample_data
+from sample_data.sample_dataloader import load_data_sample
 
 # Create results folder if it doesn't exist
 os.makedirs("results", exist_ok=True)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
+'''
+# Uncomment for demo with sample data
+X, y = load_data_sample(
+    "sample_data/tcell_blood_sample.loom",
+    "sample_data/tcell_blood_metadata_sample.csv"
+)
+'''
 def save_results(name, results_dict):
     '''Save a single classifier's results to results/{name}_results.json.'''
     path = os.path.join("results", f"{name}_results.json")
@@ -34,10 +37,11 @@ def save_results(name, results_dict):
     print(f"Saved to {path}")
 
 # Load full dataset for remaining classifiers
+# Note: this will take a few minutes to load on HPC cluster due to large size
+# Comment this out in order to run the demonstration with the sample data above
 X, y = load_data(
     loom_dir=os.path.join(BASE_DIR, "loom_files/"),
-    csv_dir=os.path.join(BASE_DIR, "metadata_files/")
-)
+    csv_dir=os.path.join(BASE_DIR, "metadata_files/"))
 
 classes = np.unique(y)
 print("Classes:", classes)
@@ -51,8 +55,8 @@ y_train, y_test = y[idx[:split]], y[idx[split:]]
 
 
 # KNN Classifier
-print("KNN Classifier Results")
-print("-"*60)
+print("\nKNN Classifier Results")
+print("-"*30)
 print("Cross Validation:")
 cross_validate(KNN, X, y, n_folds=5, k=5)
 
@@ -72,14 +76,14 @@ save_results("knn", {
 })
 
 # Random Forest Classifier
-print("Random Forest Classifier Results")
-print("-"*60)
+print("\nRandom Forest Classifier Results:")
+print("-"*30)
 print("Cross Validation:")
 cross_validate(RandomForest, X, y, n_folds=5, n_trees=100, max_depth=10)
 
 rf = RandomForest(n_trees=100, max_depth=10)
 rf.fit(X_train, y_train)
-rf_preds, _ = rf.predict(X_test)
+rf_preds = rf.predict(X_test)
 rf_probs = rf.predict_probs(X_test, classes)
 print_full_report(y_test, rf_preds, rf_probs, classes)
 
@@ -94,7 +98,7 @@ save_results("rf", {
 
 # FFNN Classifier
 print("FFNN Classifier Results")
-print("-"*60)
+print("-"*30)
 
 ffnn = FFNN(input_dim=X_train.shape[1], hidden_dim=256, output_dim=len(classes), lr=0.01, epochs=100)
 ffnn.fit(X_train, y_train)
@@ -111,3 +115,10 @@ save_results("ffnn", {
     "loss_history": [float(x) for x in ffnn.loss_history],
     "auc_roc": {c: float(v) for c, v in ffnn_aucs.items()}
 })
+
+
+# Raw ROC Classifier Probabilities for plotting
+np.save("results/y_test.npy", y_test)
+np.save("results/knn_probs.npy", knn_probs)
+np.save("results/rf_probs.npy", rf_probs)
+np.save("results/ffnn_probs.npy", ffnn_probs)

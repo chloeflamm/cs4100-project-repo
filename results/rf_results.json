@@ -54,5 +54,11 @@
       509,
       1326
     ]
-  ]
+  ],
+  "auc_roc": {
+    "activated CD4+ T cell": 0.9337639014952304,
+    "activated CD8+ T cell": 0.9014770915815109,
+    "resting CD4+ T cell": 0.9279346220137421,
+    "resting CD8+ T cell": 0.9120643894140732
+  }
 }

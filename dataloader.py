@@ -81,14 +81,12 @@ def load_single(loom_path, csv_path):
 
 def load_data(loom_dir, csv_dir, n_top_genes=500, n_pca_components=50):
     """
-    Load and preprocess all four tissue datasets into a single feature matrix.
-
+    Load and preprocess all four tissue datasets into a single feature matrix to run on the classifiers.
     Args:
-        loom_dir:        path to folder containing LOOM files
-        csv_dir:         path to folder containing metadata CSVs
-        n_top_genes:     number of most variable genes to keep (default 500)
+        loom_dir: path to folder containing LOOM files
+        csv_dir: path to folder containing metadata CSVs
+        n_top_genes: number of most variable genes to keep (default 500)
         n_pca_components: number of PCA components for final feature space (default 50)
-
     Returns:
         X: (n_cells x n_pca_components) float array
         y: (n_cells,) string array of cell type labels
@@ -116,7 +114,7 @@ def load_data(loom_dir, csv_dir, n_top_genes=500, n_pca_components=50):
     y = np.concatenate(all_y)
     print(f"\nTotal cells across all tissues: {X.shape[0]}")
 
-    # Remove cells with no confident annotation
+    # Remove cells with no bad annotation
     mask = ~np.isin(y, EXCLUDED_CLASSES)
     X, y = X[mask], y[mask]
     print(f"After removing unassigned cells: {X.shape[0]}")
@@ -127,12 +125,12 @@ def load_data(loom_dir, csv_dir, n_top_genes=500, n_pca_components=50):
     for c, n in zip(classes, counts):
         print(f"  {c}: {n} cells")
 
-    # Select top genes by variance — reduces noise and computation
+    # Select top genes by variance to reduce noise and computation
     print(f"\nSelecting top {n_top_genes} genes by variance...")
     top_genes = np.argsort(np.var(X, axis=0))[::-1][:n_top_genes]
     X = X[:, top_genes]
 
-    # Log-normalize (standard for scRNA-seq) then z-score per gene
+    # Log-normalize then z-score per gene
     print("Normalizing...")
     X = np.log1p(X)
     X = (X - X.mean(axis=0)) / (X.std(axis=0) + 1e-8)

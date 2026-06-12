@@ -3,3 +3,6 @@ metadata_files/
 .DS_Store
 **/.DS_Store
 results/*.npy
+.idea/
+__pycache__/
+*.pyc
