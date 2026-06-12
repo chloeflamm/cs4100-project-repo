@@ -38,7 +38,7 @@ pip install -r requirements.txt
     - Shell: Bash
     - (Request curl Command)
 - Place LOOM files in loom_file/ and metadata in metadata_files/
-- [Note] All filepaths are currently in terms of sample_data, if you want to run full dataset, uncomment the appropriate code blocks in all files
+- [Note] All filepaths are currently in terms of sample_data (Demo = True), if you want to run full dataset, set False
 - For sample data, use either sample_data/tcell_blood_metadata_sample.csv and sample_data/tcell_blood_sample.loom OR run:
   ```text
   python sampledata.py
@@ -65,7 +65,6 @@ pip install -r requirements.txt
 - Unassigned labels are excluded from the main classification task so that all classifiers are evaluated on the same four-class problem.
 
 ### IV. Organization of Code 
-
 
 ```text
 cs4100-project-repo/
@@ -96,11 +95,12 @@ cs4100-project-repo/
 │       ├── ffnn_sample_results.json         # Evaluation metrics for the (sample) feed-forward neural network
 │       ├── knn_sample_results.json          # Evaluation metrics for the (sample) KNN classifier
 │       ├── rf_sample_results.json           # Evaluation metrics for the (sample) random forest classifier
-│       ├──
-│       ├──
+│       ├── f1_by_cell_type.png              # Saved F1 Combined Bar Chart PNG
+│       ├── confusion_matrix_heatmaps.png    # Saved Confusion Matrix Heatmaps PNG
 │       └── roc_curves.png                   # Saved ROC visualizations PNG
 │
 ├── dataloader.py                        # Loads, matches, preprocesses, and splits expression/metadata files
+├── requirements.txt                     # Dependencies
 ├── evaluate.py                          # Shared evaluation metrics: accuracy, F1, confusion matrix, AUC-ROC
 ├── main.py                              # Main training/evaluation pipeline for project classifiers
 ├── pretrained_celltypist.py             # Runs the pretrained CellTypist baseline and maps labels
