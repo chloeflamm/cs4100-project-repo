@@ -1,6 +1,6 @@
 # A Comparative Analysis of T-Cell State Classification from Single-cell RNA-seq Data
 
-#### Team Members: Chloe Flamm, Nasir Stanley
+#### Team Members: Chloe Flamm, Nasir Stanley, Jasdeep Singh
 
 ### I. Overview of the Problem
 
@@ -20,7 +20,16 @@ In addition to our from-scratch classifiers, we started by running our data thro
 
 ### II. Setup Requirements
 
-- Libraries: requirements.txt
+- Dependencies: 
+    - numpy
+    - pandas
+    - loompy
+    - scanpy
+    - celltypist
+    - pytorch
+    - matplotlib
+
+### III. Instructions to execute
 
 - Dataset Download: 
     - Human Cell Atlas Data Explorer: https://explore.data.humancellatlas.org/projects/4a95101c-9ffc-4f30-a809-f04518a23803/get-curl-command
@@ -28,26 +37,45 @@ In addition to our from-scratch classifiers, we started by running our data thro
     - File Type: csv, loom
     - Shell: Bash
     - (Request curl Command)
-
-
-- Pre-Cleaning
-    - Once dataset was downloaded, we selected the LOOM files with names in plain-english that corresponded to the CSV metadata.
-    - In LOOM files, cell barcodes are named "cell_name" and have "-0" at the tail end of each entry, which require cleaning. In metadata CSVs, the corresponding barcode column is "barcode".
-    - Further downsampling for test data was created by cross-checking barcodes and selecting 500 cells.
+- After placing LOOM files in loom_files/ and metadata in metadata_files/,
+  run: python main.py
+  This runs from classifiers from scratch and saves results to JSON files in results/ folder.
+- To run pretrained CellTypist baseline on the raw expression data and save to results/,
+  run: python pretrained_celltypist.py
+- To generate visualizations (F1 score by cell type across classifiers, Confusion matrix heatmaps, ROC curves) after JSON results have been saved,
+  run: python visualize.py. 
 
 - [Note] This dataset is extensive in size, and required jobs submitted to Northeastern's High Performance Computer (HPC) cluster for training. 
+- [Note] The four target labels used for classification are:
+    - activated CD4+ T cell
+    - activated CD8+ T cell
+    - resting CD4+ T cell
+    - resting CD8+ T cell
+- Unassigned labels are excluded from the main classification task so that all classifiers are evaluated on the same four-class problem.
 
-### III. Instructions to execute
+### IV. Organization of Code 
 
-- Instruction to run main evaluation file
+## Organization of Code
 
-
-### IV. Organization of Code (In progress)
-
-Data: 
-    - loomfiles/
-    - metadata/
-
-- Classifiers:
-- Evaluation
-- Results.txt
+```text
+cs4100-project-repo/
+├── classifiers/                 # Implemented classifiers
+│   ├── ffnn.py                  # Feed-forward neural network classifier using PyTorch
+│   ├── knn.py                   # K-nearest neighbors classifier
+│   └── rf.py                    # Random forest classifier 
+│
+├── loom_files/                  # LOOM gene-expression data files
+├── metadata_files/              # Metadata CSV files
+│
+├── results/                     # Saved model outputs and generated figures
+│   ├── ffnn_results.json        # Evaluation metrics for the feed-forward neural network
+│   ├── knn_results.json         # Evaluation metrics for the KNN classifier
+│   ├── rf_results.json          # Evaluation metrics for the random forest classifier
+│   ├── celltypist_results.json  # Evaluation metrics for the CellTypist baseline
+│   └── ...                      # Saved visualization PNGs
+│
+├── dataloader.py                # Loads, matches, preprocesses, and splits expression/metadata files
+├── evaluate.py                  # Shared evaluation metrics: accuracy, F1, confusion matrix, AUC-ROC
+├── main.py                      # Main training/evaluation pipeline for project classifiers
+├── pretrained_celltypist.py     # Runs the pretrained CellTypist baseline and maps labels
+└── visualization.py             # Generates result visualizations from saved JSON files
